@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacinta Bolos & Cia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-rose-50">
+
+  <!-- Cabeçalho -->
+  <header class="bg-rose-600 text-white p-6 shadow-md">
+    <h1 class="text-4xl font-bold text-center">🍰 Jacinta Bolos & Cia</h1>
+    <p class="text-center mt-2 text-lg">Delícias feitas com carinho ❤</p>
+  </header>
+
+  <!-- Cardápio -->
+  <main class="max-w-6xl mx-auto p-6 space-y-12">
+
+    <!-- Bolos no Pote -->
+    <section>
+      <h2 class="text-3xl font-bold text-rose-700 mb-6">Bolos no Pote (300ml) - R$10</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?oreo,cake" alt="Bolo Oreo" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Oreo</h3>
+            <button onclick="abrirFormulario('Bolo no Pote - Oreo', 10)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?strawberry,chocolate,cake" alt="Morango com Chocolate" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Morango com Chocolate</h3>
+            <button onclick="abrirFormulario('Bolo no Pote - Morango com Chocolate', 10)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?strawberry,cake" alt="Morango com Ninho" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Morango com Ninho</h3>
+            <button onclick="abrirFormulario('Bolo no Pote - Morango com Ninho', 10)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?red,velvet,cake" alt="Red Velvet" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Red Velvet</h3>
+            <button onclick="abrirFormulario('Bolo no Pote - Red Velvet', 10)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini Pudim -->
+    <section>
+      <h2 class="text-3xl font-bold text-rose-700 mb-6">Mini Pudim - R$10</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?pudding,dessert" alt="Mini Pudim" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Mini Pudim</h3>
+            <button onclick="abrirFormulario('Mini Pudim', 10)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brownie -->
+    <section>
+      <h2 class="text-3xl font-bold text-rose-700 mb-6">Brownie - R$12</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?brownie,dessert" alt="Brownie" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Brownie</h3>
+            <button onclick="abrirFormulario('Brownie', 12)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Empadas -->
+    <section>
+      <h2 class="text-3xl font-bold text-rose-700 mb-6">Empadas (220ml)</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?chicken,pie" alt="Empada de Frango" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Frango - R$10</h3>
+            <button onclick="abrirFormulario('Empada de Frango', 10)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?meat,pie" alt="Empada de Carne Seca" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Carne Seca - R$12</h3>
+            <button onclick="abrirFormulario('Empada de Carne Seca', 12)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?shrimp,pie" alt="Empada de Camarão" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Camarão - R$12</h3>
+            <button onclick="abrirFormulario('Empada de Camarão', 12)" class="mt-3 bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Encomendar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal Formulário -->
+  <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+    <div class="bg-white p-6 rounded-2xl shadow-lg max-w-md w-full">
+      <h2 class="text-2xl font-bold mb-4 text-rose-700">Encomenda</h2>
+      <form id="pedidoForm" class="space-y-4">
+        <input type="hidden" id="produto">
+        <input type="hidden" id="preco">
+        <div>
+          <label class="block text-gray-700">Seu Nome:</label>
+          <input type="text" id="nomeCliente" class="w-full border rounded-lg p-2" required>
+        </div>
+        <div>
+          <label class="block text-gray-700">Telefone:</label>
+          <input type="tel" id="telefoneCliente" class="w-full border rounded-lg p-2" required>
+        </div>
+        <div>
+          <label class="block text-gray-700">Quantidade:</label>
+          <input type="number" id="quantidade" min="1" value="1" class="w-full border rounded-lg p-2" required>
+        </div>
+        <div>
+          <label class="block text-gray-700">Data da Retirada/Entrega:</label>
+          <input type="date" id="dataEntrega" class="w-full border rounded-lg p-2" required>
+        </div>
+        <div>
+          <label class="block text-gray-700">Opção:</label>
+          <select id="opcaoEntrega" class="w-full border rounded-lg p-2" required>
+            <option value="Retirada na Loja">Retirada na Loja</option>
+            <option value="Entrega">Entrega</option>
+          </select>
+        </div>
+        <div class="flex justify-end gap-3">
+          <button type="button" onclick="fecharFormulario()" class="bg-gray-300 px-4 py-2 rounded-xl">Cancelar</button>
+          <button type="submit" class="bg-rose-600 text-white px-4 py-2 rounded-xl hover:bg-rose-700">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    const modal = document.getElementById('formModal');
+    const produtoInput = document.getElementById('produto');
+    const precoInput = document.getElementById('preco');
+    const form = document.getElementById('pedidoForm');
+
+    function abrirFormulario(produto, preco) {
+      produtoInput.value = produto;
+      precoInput.value = preco;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function fecharFormulario() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nome = document.getElementById('nomeCliente').value;
+      const telefone = document.getElementById('telefoneCliente').value;
+      const quantidade = document.getElementById('quantidade').value;
+      const dataEntrega = document.getElementById('dataEntrega').value;
+      const opcaoEntrega = document.getElementById('opcaoEntrega').value;
+      const produto = produtoInput.value;
+      const preco = precoInput.value;
+      const total = quantidade * preco;
+
+      const mensagem = `Olá Jacinta Bolos & Cia! Gostaria de fazer uma encomenda:%0A%0AProduto: ${produto}%0AQuantidade: ${quantidade}%0APreço: R$${preco}%0ATotal: R$${total}%0AData: ${dataEntrega}%0AOpção: ${opcaoEntrega}%0A%0ACliente: ${nome}%0ATelefone: ${telefone}`;
+
+      window.open(`https://wa.me/5521992993398?text=${mensagem}`, '_blank');
+      fecharFormulario();
+    });
+  </script>
+
+</body>
+</html>
